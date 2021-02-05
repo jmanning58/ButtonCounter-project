@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Button-counter-Manning</string>
+    <string name="startButton">Go</string>
+    <string name="minusButton">Minus</string>
+    <string name="quitButton">Quit</string>
+    <string name="counter">0</string>
 </resources>

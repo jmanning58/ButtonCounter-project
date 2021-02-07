@@ -8,12 +8,12 @@ Create an app that has three buttons, one for incrementing a counter, one for de
 
 ### TODO:
 1. Open Android Studio and create an Android project named Button-counter-\<yourLastName\>.
-2. Edit .gitignore file and put the neccessary file names that do not belong in GitHub.
-3. Initialize project as a Git repoistory.
+2. Edit .gitignore file and put the necessary file names that do not belong in GitHub.
+3. Initialize project as a Git repository.
 4. Fork this project into your Github account and copy the clone link.
 5. Run the git remote add command to link your project to the Github repository.
 6. Perform a git pull origin master command to pull the README and sync the repos.
-7. Add,Commmit, and Push your initial files.
+7. Add, Commit, and Push your initial files.
 8. Verify files were uploaded to your GitHub account.
 9. Complete the project.
 10. Add, Commit and Push your completed project code to GitHub.

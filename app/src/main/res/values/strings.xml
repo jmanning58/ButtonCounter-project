@@ -3,7 +3,7 @@
     <string name="startButton">Add</string>
     <string name="minusButton">Minus</string>
     <string name="resetButton">Reset</string>
-    <string name="quitButton">Quit</string>
+    <string name="quitButton">x</string>
     <string name="counter">0</string>
     <string name="Title">Counter App</string>
 </resources>

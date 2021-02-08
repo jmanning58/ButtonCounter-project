@@ -35,8 +35,13 @@ public class MainActivity extends AppCompatActivity {
             });
 
         minusB.setOnClickListener(v -> {
-            counter--;
-            text.setText(Integer.toString(counter));
+            if (counter == 0) {
+                text.setText(Integer.toString(counter));
+            }
+            else {
+                counter--;
+                text.setText(Integer.toString(counter));
+            }
         });
 
         resetB.setOnClickListener(v -> {

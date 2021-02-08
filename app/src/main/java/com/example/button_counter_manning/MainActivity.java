@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         minusB.setOnClickListener(v -> {
             if (counter == 0) {
                 text.setText(Integer.toString(counter));
+                displayToast("Cannot have a Negative of Something");
             }
             else {
                 counter--;

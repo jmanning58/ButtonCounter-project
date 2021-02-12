@@ -27,25 +27,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         display = this.findViewById(R.id.displayID);
-        addB = this.findViewById(R.id.button);
-        minusB = this.findViewById(R.id.button2);
-        resetB = this.findViewById(R.id.button3);
-        quitB = this.findViewById(R.id.button4);
-
+        addB = this.findViewById(R.id.addButtonID);
+        minusB = this.findViewById(R.id.minusButtonID);
+        resetB = this.findViewById(R.id.resetButtonID);
+        quitB = this.findViewById(R.id.quitButtonID);
 
         addB.setOnClickListener(v -> {
-            counter++;
-            display.setText(Integer.toString(counter));
+            int currentValue = Integer.valueOf(display.getText().toString());
+            currentValue++;
+            display.setText(Integer.toString(currentValue));
             });
 
         minusB.setOnClickListener(v -> {
-            if (counter == 0) {
-                display.setText(Integer.toString(counter));
+            int currentValue = Integer.valueOf(display.getText().toString());
+            if (currentValue == 0) {
+                display.setText(Integer.toString(currentValue));
                 displayToast("Cannot have a Negative of Something");
             }
             else {
-                counter--;
-                display.setText(Integer.toString(counter));
+                currentValue--;
+                display.setText(Integer.toString(currentValue));
             }
         });
 
@@ -112,4 +113,5 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
         Log.i(TAG, "I entered onDestroy()");
      }
+
 }
